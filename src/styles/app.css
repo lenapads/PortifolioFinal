@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 65px;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+.links a {
+    text-decoration: none;   
+    color: #333;            
+    font-family: 'Marcellus', serif;  
+    font-size: 15px;         
+    margin: 0 12px;          
+    transition: color 0.3s ease;
+  }
+  
+  .links a:hover {
+    color: #DFB0B0; 
+  }
+
+.links p {
+    cursor: pointer;
+}
+
+main {
+    background-image: url('../assets/imgs/main.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* --------------- ------------------- ---------------- ------------------- */
+
+.projetos {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 0;
+}
+.projetos a {
+    text-decoration: none; 
+    color: #333; 
+   
+}
+
+.card {
+    background-color: #E8CACE;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.card img {
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin: 20px 0;
+    font-family: "Playfair";
+}
+
+.card button {
+    background-color: #DFB0B0;
+    color: white;
+    border: none;
+    padding: 10px 55px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: "Marcellus";
+}
+
+/* ---------------------------------------------- */
+
+.quemSou {
+    background-image: url('../assets/imgs/quemSou.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 116vh;
+}
+
+/* --------------------------------------------------------- */
+
+.algunsDeles {
+    background-color: #E3CDE5;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+    padding: 10px;
+}
+.umDeles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+}
+
+.umDeles img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px; 
+  }
+  
+
+/* ---------------------------------------------------- */
+
+.habilidades {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+  }
+  
+  .titulo-habilidades {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Playfair'; 
+    color: #373d3b;
+  }
+  
+  .onda-esquerda, .onda-direita {
+    color: #ef601e;
+    font-size: 50px;
+    font-weight: 400;
+  }
+  
+  
+  
+  .titulo-habilidades::after {
+    right: -100px;
+  }
+  
+  .titulo-habilidades::before {
+    left: -100px;
+  }
+  
+  .botoes-habilidades {
+    display: grid;
+    grid-template-columns: repeat(3, auto); 
+    gap: 30px 60px;                         
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;  
+    margin: 0 auto;
+  }
+  
+  .habilidades button {
+    background-color: #fff3dc; 
+    color: #373d3b;
+    font-family: 'Marcellus', serif;
+    font-weight: bolder;
+    border: none;
+    padding: 30px 85px;
+    margin: 7px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .habilidades button:hover {
+    transform: scale(1.1);
+    background-color: #ef601e; 
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .footer {
+    background-color: #fff3dc; 
+    padding: 20px;
+    text-align: center;
+    font-family: 'Marcellus', serif;
+    color: black;
+    border-top: 2px solid #f8c8dc; 
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+  }
+  
+  .github-icon {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .github-icon:hover {
+    transform: scale(1.1);
+  }
+  .certificados {
+    padding: 80px 40px;
+    font-family: 'Marcellus', serif;
+    text-align: center;
+    overflow: hidden;
+    font-weight: bolder;
+  }
+  
+  .titulo-certificados {
+    font-size: 50px;
+    color: #373d3b;
+    margin-bottom: 30px;
+    font-family: "Playfair";
+  }
+  
+  .carousel {
+    position: relative;
+    width: 90%;              
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+  
+  .certificado-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #eedddf;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .certificado-item img {
+    width: 100%;
+    max-height: 400px;      
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  .certificado-item p {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .carousel-btn {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: #d6e8f7;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2;
+    transition: transform 0.2s ease;
+  }
+  
+  .carousel-btn:hover {
+    transform: scale(1.2);
+  }
+  
+  
+  
